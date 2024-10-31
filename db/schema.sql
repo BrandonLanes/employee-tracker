@@ -5,8 +5,8 @@ CREATE DATABASE employee_tracker_db;
 
 \c employee_tracker_db
 
-CREATE TABLE departments (
+CREATE TABLE department (
     department_name VARCHAR(100)
 );
 
-CREATE TABLE roles ()
+CREATE TABLE role ()
