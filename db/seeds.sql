@@ -1,6 +1,6 @@
 \c employee_tracker_db;
 
-INSERT INTO department(name)
+INSERT INTO department(department_name)
 VALUES ('Parks and Recreation'),
        ('Police'),
        ('Fire'),
