@@ -42,9 +42,9 @@ VALUES ('Director of Parks and Rec', 100000, 1),
 
 INSERT INTO employee(first_name, last_name, role_id, manager_id)
 VALUES 
-        ('Chris', 'Traeger', 18, 1),
-        ('Sir Benjamin', 'Wyatt', 18, 2),
-        ('Ron', 'Swanson', 1, 3),
+        ('Chris', 'Traeger', 18, NULL),
+        ('Sir Benjamin', 'Wyatt', 18, NULL),
+        ('Ron', 'Swanson', 1, NULL),
         ('Leslie', 'Knope', 2, NULL),
         ('Hugh', 'Trumple', 3, NULL),
         ('Al', 'Connor', 4, NULL),

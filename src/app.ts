@@ -1,6 +1,6 @@
 import inquirer from 'inquirer';
-import { viewDepartments, addDepartment } from './queries/department';
-import { viewRoles, addRole } from './queries/role';
+import { viewDepartments, addDepartment } from './queries/department.js';
+import { viewRoles, addRole } from './queries/role.js';
 // import { viewEmployees, addEmployee, updateEmployeeRole } from './queries/employee';
 
 async function mainMenu(): Promise<void> {
