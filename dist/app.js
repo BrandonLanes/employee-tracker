@@ -1,7 +1,7 @@
 import inquirer from 'inquirer';
 import { viewDepartments, addDepartment } from './queries/department.js';
 import { viewRoles, addRole } from './queries/role.js';
-// import { viewEmployees, addEmployee, updateEmployeeRole } from './queries/employee';
+import { viewEmployees, addEmployee, updateEmployee } from './queries/employee.js';
 async function mainMenu() {
     const { action } = await inquirer.prompt([
         {
@@ -27,21 +27,21 @@ async function mainMenu() {
         case 'View all roles':
             await viewRoles();
             break;
-        // case 'View all employees':
-        //   await viewEmployees();
-        //   break;
+        case 'View all employees':
+            await viewEmployees();
+            break;
         case 'Add a department':
             await addDepartment();
             break;
         case 'Add a role':
             await addRole();
             break;
-        // case 'Add an employee':
-        //   await addEmployee();
-        //   break;
-        // case 'Update an employee role':
-        //   await updateEmployeeRole();
-        //   break;
+        case 'Add an employee':
+            await addEmployee();
+            break;
+        case 'Update an employee role':
+            await updateEmployee();
+            break;
         case 'Exit':
             process.exit();
     }

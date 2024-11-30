@@ -3,9 +3,9 @@ import { rolePrompt } from '../prompts.js';
 
 export async function viewRoles(): Promise<void> {
   const res = await pool.query(`
-    SELECT role.id, role.title, role.salary, department.name AS department
+    SELECT role.role_id, role.title, role.salary, department.department_name AS department
     FROM role
-    JOIN department ON role.department_id = department.id
+    JOIN department ON role.department_id = department.department_id
   `);
   console.table(res.rows);
 }
