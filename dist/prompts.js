@@ -1,7 +1,7 @@
 import inquirer from 'inquirer';
 export async function departmentPrompt() {
     return inquirer.prompt([
-        { type: 'input', name: 'name', message: 'Enter department name:' },
+        { type: 'input', name: 'department_name', message: 'Enter department name:' },
     ]);
 }
 export async function rolePrompt() {

@@ -46,7 +46,7 @@ Employee Tracker is a command-line application that allows business owners to vi
 2. Follow the prompts in the command-line interface to interact with the employee tracker.
 
 ## Walkthrough Video
-A walkthrough video demonstrating the functionality of the Employee Tracker can be found here: 
+A walkthrough video demonstrating the functionality of the Employee Tracker can be found here: https://app.screencastify.com/v2/manage/videos/kC7mlwRaTktR73e6jhfN
 
 The video showcases:
    - Application start-up

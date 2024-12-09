@@ -11,9 +11,9 @@ export async function viewDepartments() {
 }
 export async function addDepartment() {
     try {
-        const { name } = await departmentPrompt();
-        await pool.query('INSERT INTO department (name) VALUES ($1)', [name]);
-        console.log(`Department '${name}' added successfully.`);
+        const department_name = await departmentPrompt();
+        await pool.query('INSERT INTO department (department_name) VALUES ($1)', [department_name]);
+        console.log(`Department '${department_name}' added successfully.`);
     }
     catch (error) {
         console.error('Error adding department:', error);
